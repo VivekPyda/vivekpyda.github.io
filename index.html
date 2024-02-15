@@ -2,18 +2,86 @@
 <html>
 
 <head>
-    <title>A Meaningful Page Title</title>
-    <link rel="stylesheet" href="mystyle.css">
-    <meta name="author" content="Vivekananda Reddy Pyda">
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vivekananda Reddy Pyda">
+    <meta name="description" content="Web developer">
     <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Vivekananda Reddy Pyda</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>My First Heading</h1>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fa fa-lg fa-home"></i>
+                </a>
+            </div>
 
-    <p>My first paragraph.</p>
+            <div class="main-menu">
+                <ul>
+                    <!-- <li><a href="about.html">About</a></li> -->
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/hobbies.html">Hobbies</a></li>
+                    <!-- <li><a href="pages/contact.html">Contact</a></li> -->
+                    <button class="btn" onclick="toggleTheme()"><i class="fa fa-lg fa-sun"></i></button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main">
+        <div class="container">
+            <div class="main-content">
+                <div class="main-profile-image">
+                    <img src="images\profile 2.png" />
+                </div>
+                <h1 class="main-heading text-xxl">
+                    Vivekananda Reddy Pyda
+                </h1>
+                <p class="main-text text-lg text-justify">
+                    Hi! I’m a passionate programmer with expertise in Web Development. Currently pursuing my Master’s in
+                    Computer Science, I aspire to work as a Software Engineer.
+                </p>
+                <div class="hero-buttons btn-md">
+                    <a href="pages/contact.html" class="btn btn-primary">Hire me!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-black">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-contact">
+                    <h4>Contact me</h4>
+                    <a href="mailto:vivek.pyda@gmail.com">Email to: vivek.pyda@gmail.com</a>
+                    <a href="tel:+15755717178">Contact: (575) 571-7178</a>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/vivekpyda/">
+                        <!-- <i class="fa fa-lg fa-linkedin"></i> -->
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/VivekPyda">
+                        <!-- <i class="fa fa-lg fa-github"></i> -->
+                        Github
+                    </a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; 2024 Vivekananda Reddy Pyda. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
