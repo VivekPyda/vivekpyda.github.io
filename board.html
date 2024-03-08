@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong - Canvas Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="pong.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="col-md-8 text-center">
+            <h2>Instructions</h2>
+            <p class="mb-0">Player 1 controls: Press 'W' to move up and 'S' to move down</p>
+            <p>Player 2 controls: Press 'Arrow up' to move up and 'Arrow down' to move down</p>
+        </div>
+    </div>
+    
+    <canvas id="board"></canvas>
+
+    <script>
+        // Get player names from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const player1Name = urlParams.get('player1');
+        const player2Name = urlParams.get('player2');
+
+        // Pass player names to the game
+        initGame(player1Name, player2Name);
+    </script>
+</body>
+
+</html>
